@@ -9,22 +9,26 @@ NUGs are coming to SF and have no understanding of the Housing Market in SF, fur
 
 Solution:
 
-Housing Information for NUGs;
+	Housing Information for NUGs;
 
-Main companies (e.g. Avalon);
+	Main companies (e.g. Avalon);
 
-Scams;
+	Scams;
 
-Look for roommates;
+	Look for roommates;
 
-focus on and around the campus location;
+	focus on and around the campus location;
 
 
 Questionnaire:
 •Budget?;
+
 •Roommates? (how many?);
+
 •Distance from campus;
+
 •Required Amenities;
+
 •Preferred Amenities;
 	
 Questionnaire for roommates
