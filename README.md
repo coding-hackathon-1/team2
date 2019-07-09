@@ -8,18 +8,24 @@ Problem:
 NUGs are coming to SF and have no understanding of the Housing Market in SF, furthermore Hult is limiting their accommodations to 55 students, and the incoming class is around 100 students.
 
 Solution:
-Housing Information for NUGs
-Main companies (e.g. Avalon, 
-Scams
-Look for roommates
-focus on and around the campus location
+
+Housing Information for NUGs;
+
+Main companies (e.g. Avalon);
+
+Scams;
+
+Look for roommates;
+
+focus on and around the campus location;
+
 
 Questionnaire:
-•Budget? 
-•Roommates? (ho many?)
-•Distance from campus
-•Required Amenities 
-•Preferred Amenities
+•Budget?;
+•Roommates? (how many?);
+•Distance from campus;
+•Required Amenities;
+•Preferred Amenities;
 	
 Questionnaire for roommates
 
