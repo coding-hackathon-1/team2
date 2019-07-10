@@ -1,0 +1,15 @@
+Code Outline
+# We are going to use Django as our main interface
+# Website
+
+Requirements
+1. Information
+  - pages 1-3
+    - Housing Market Overview
+  - page 4
+    - Housing Preferences
+    
+2. Social Page
+  - Roommates questionnaire
+  - User Profile (pre-made)
+  
