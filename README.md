@@ -1,4 +1,4 @@
-# team2
+# team2 (is great)
 This is a repository for team2
 
 Hey guys, the following are my notes from the meetings during class time on July 9th 2019.
