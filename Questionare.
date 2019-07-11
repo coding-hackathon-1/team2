@@ -1,0 +1,65 @@
+# Importing necessary packages
+import pandas as pd
+
+# Creating base objects
+data_list = []
+database_df = pd.DataFrame(columns = ['Name',
+                                      'Roomates'
+                                      'Spending',
+                                      'Distance',
+                                      'Preffered_amenities',
+                                      'Required_amenities',
+                                      'Bed',
+                                      'Bath',
+                                      'Town_home_or_Apartment' ])
+
+# Developing an Excel file to handle multi-user data
+database_df.to_excel('User_Data.xlsx',
+                     index = False)
+#######################################################
+##### Loading the database object
+database_df = pd.read_excel('User_Data.xlsx')
+
+# input() data
+name                   = input('What is your name: ')
+roomates               = input('How many roomates would you like to have? ')
+spending               = input('How much are you willing to spend? ')
+
+def distance_km():
+    distance = input('How far from school are you willing to live? Please answer in kilometers. ')
+    
+    try:
+        float(distance)
+    
+    except TypeError:
+        print('Please input a number in numeric form (can include decimals)')
+        distance_km()
+        
+    except ValueError:
+        print('Please input a number in numeric form (can include decimals)')
+        distance_km()
+    
+    distance = float(distance)
+    return distance
+
+distance_km() 
+
+
+
+preffered_amenities    = input('What are some amenities that you would like to have? ')
+required_amenities     = input('What are some amenities you can not live without? ')
+bed                    = input('How many bedrooms would you like to have in your living space? ')
+bath                   = input('How many toiletries would you like to have in your living space?: ')
+town_home_or_apartment = input('Would you like to live in a town home or apartment: ')
+
+
+data_list.append({'Name': name,'Roomates': roomates,'Spending' : spending ,'Distance' : distance,
+                  'Preffered_amenities' : preffered_amenities, 'Required_amenities': required_amenities,
+                  'Bed' : bed,'Bath' : bath,'Town_home_or_Apartment' : town_home_or_apartment})
+
+user_data = database_df.append(data_list[-1],
+                               ignore_index=True)
+
+
+user_data.to_excel('User_Data.xlsx',
+                   index = False)
