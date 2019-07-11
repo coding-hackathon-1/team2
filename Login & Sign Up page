@@ -1,5 +1,6 @@
 #This login page is created using the Django framework
 
+#Code is to create the login page
 urls.py
 from django.contrib import admin
 from django.urls import path, include
@@ -39,7 +40,7 @@ login_base.html
 <head>
 	<meta charset="utf-8">
 	<title>
-		{% block title %} Django Auth Tutorial {% endblock %}
+		{% block title %} Housing Helper SF {% endblock %}
 	</title>
 </head>
 <body>
@@ -65,4 +66,49 @@ login_home.html
 	<a href="{% url 'login' %}">login</a>
 {% endif %}
 {% endblock %}
+
+
+#Code is for creating the SignUp page
+
+urls.py #in accounts folder
+from django.urls import path
+
+from . import views
+
+
+urlpatterns = [
+	path('signup/', views.SignUp.as_view(), name='signup')
+	path('')
+]
+
+
+signup.html
+{% extends 'login_base.html' %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+	<h2>Sign Up</h2>
+	<form method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit">Sign up</button>
+	</form>
+
+{% endblock %}
+
+
+views.py
+from django.shortcuts import render
+from django.contrib.auth.forms import UserCreationForm
+from django.urls import reverse_lazy
+from django.views import generic
+
+# Create your views here.
+
+class SignUp(generic.CreateView):
+	form_class = UserCreationForm
+	success_url = reverse_lazy('login')
+	template_name = 'signup.html'
+
 
